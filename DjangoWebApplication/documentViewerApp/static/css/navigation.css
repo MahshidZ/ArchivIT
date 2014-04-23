@@ -1,0 +1,29 @@
+.link {
+  fill: #fff;
+  stroke: #aaa;
+  stroke-width: 2px;
+}
+
+.node text {
+  font: 20 50px Helvetica Neue;
+}
+
+.node rect {
+  fill: #ccc;
+  stroke: #666;
+  stroke-width: 1.5px;
+  fill-opacity: .3 ;
+}
+
+.node.active {
+  fill: red;
+}
+
+
+.node rect:hover {
+  fill: #708090;
+}
+
+
+
+

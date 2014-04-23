@@ -1,0 +1,115 @@
+
+<html>
+<head>
+{% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" /> 
+  <link rel="stylesheet" type="text/css" href="{% static "css/categories.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% static "css/clustering.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% static "css/navigation.css" %}" />
+  <script src="{% static "js/jquery.js" %}" type="text/javascript"></script>
+  <script src="{% static "js/boxes.js" %}" type="text/javascript"></script> 
+    <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+  <script src="{% static "js/slider.js" %}"  type="text/javascript"></script>
+
+<script type="text/javascript">
+function getPath(){
+document.forms[0].thepath.value=document.forms[0].thefile.value;
+}
+</script>
+
+
+</head>
+<body>
+<div id="titlebar" class="gray">
+  <h1> The ArchivIT project</h1>
+</div>
+
+<div id="leftcol">
+  <div id="leftmenu">
+ <h2> Browse </h2>
+
+  </div>
+</div>
+
+<div id="clusteringbar">
+  <h1>Un-supervised Clustering</h1>
+  <form action="#" method="get">
+    <div id="slider">
+      <label for="data">The input data directory: </label>
+      <input type="file" value="" name="thefile" onblur="getPath()"/>
+    </div>
+    <div id="slider">
+      <label for="output">The output data directory: </label>
+      <input type="file" value="" name="thefile" onblur="getPath()"/>
+    </div>
+    <div id="slider">
+      <label for="clusternumber">The number of clusters: </label>
+      <input type="text" value="8" name="clusternumber" size="1"/>
+    </div>
+    <fieldset id="FieldSet">
+      <legend> Region 1 </legend>
+      <div id="slider">
+        Text Density: <input type="range" name="region1Text" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Line Density: <input type="range" name="region1Line" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Image Density: <input type="range" name="region1Image" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+    </fieldset>
+
+    <fieldset id="FieldSet">
+      <legend> Region 2 </legend>
+      <div id="slider">
+        Text Density: <input type="range" name="region2Text" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Line Density: <input type="range" name="region2Line" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Image Density: <input type="range" name="region2Image" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+    </fieldset>
+
+    <fieldset id="FieldSet">
+      <legend> Region 3</legend>
+      <div id="slider">
+        Text Density: <input type="range" name="region3Text" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Line Density: <input type="range" name="region3Line" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+      <div id="slider">
+        Image Density: <input type="range" name="region3Image" min="0" max="10" value="1" />
+        <span id="rangenumber">1</span>
+      </div>
+    </fieldset>
+
+
+
+    <div style="float: center; margin-left: 150px;">
+      <input type="submit" class="button" value="Kmeans" name="kmeansbtn">
+    </div>
+
+  </form>
+
+<br>
+<hr>
+<br>
+
+</div>
+
+<script src="{% static "js/navigation.js" %}" type="text/javascript"></script>
+
+</body>
+</html>
+

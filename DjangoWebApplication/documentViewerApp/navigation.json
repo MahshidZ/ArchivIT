@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Thumbnail Maker",
+        "pageaddress": "/documentViewerApp/thumbnailmaker",
+        "x": 10,
+        "y": 60,
+        "parent": "null",
+        "children": [
+            {
+                "name": "Input Data",
+                "pageaddress": "/documentViewerApp/InputData",
+                "x": 10,
+                "y": 80,
+                "parent": "Thumbnail Maker",
+                "children": [
+                    {
+                        "name": "Clustering",
+                        "pageaddress": "/documentViewerApp/categoriesall",
+                        "x": 10,
+                        "y": 100,
+                        "parent": "Input Data",
+                        "children": [
+                    {
+                        "name": "Training Set Builder",
+                        "pageaddress": "/documentViewerApp/TrainingSetBuild",
+                        "x": 10,
+                        "y": 120,
+                        "parent": "Clustering",
+                        "children": [
+                    {
+                        "name": "Classification",
+                        "pageaddress": "/documentViewerApp/Classification",
+                        "x": 10,
+                        "y": 140,
+                        "parent": "Training Set Builder"
+                    },
+                    {
+                        "name": "Evaluation",
+                        "pageaddress": "/documentViewerApp/Evaluation",
+                        "x": 20,
+                        "y": 100,
+                        "parent": "Training Set Builder"
+                    }
+
+                ]
+                    }
+                ]
+                    }
+                ]
+            }
+        ]
+    }
+]

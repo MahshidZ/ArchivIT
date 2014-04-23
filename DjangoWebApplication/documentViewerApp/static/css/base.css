@@ -1,0 +1,139 @@
+/*****color chart********
+border color bc #e6e6e6
+*/
+
+
+body {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: normal;
+line-height: 18px;
+margin:  0px;
+font-size:  13px;
+padding:  0px;
+}
+
+#titlebar {
+height: 50px;
+min-width: 100px;
+max-width: 5000px;
+position: relative;
+margin-top: 10px;
+margin-left: 0;
+border: 1px solid gray;
+}
+.gray{
+background: #eee;
+}
+
+
+#titlebar h1{
+margin-top: 15px;
+margin-left: 160px;
+font-family: Verdana, serif;
+font-size: 4em;
+font-weight: bold;
+letter-spacing: -0.1ex;
+font-size: 135%;
+color: #CC3204;
+}
+
+#leftcol {
+float: left;
+width: 30%;
+height: 80%;
+margin-left: 0;
+padding-left: 0;
+position: relative;
+}
+
+#leftmenu{
+margin-left:  80px;
+padding-left: 0;
+}
+
+#leftmenu h2{
+font-size: 18px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+height: auto;
+position: static;
+line-height: 24px;
+font-weight: bold;
+border-bottom: 1px solid /*bc*/#e6e6e6;
+position: relative;
+color: #404040;
+}
+
+#leftmenu a:link {
+color: #0069d6;
+font-size: 13px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ text-decoration:none;
+}
+
+#leftmenu a:hover{
+text-decoration:  underline;
+}
+
+#content {
+float: left;
+padding-left: 30px;
+padding-bottom: 10px;
+position: relative;
+width: 50%;
+height: 750px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 13px;
+border-left:  1px solid /*bc*/#e6e6e6;
+}
+
+#content h1 {
+color: #bfbfbf;
+font-size: 25px;
+font-weight: normal;
+}
+
+
+#clusteringbar{
+margin-left:  100px;
+float: left;
+padding-left: 30px;
+padding-bottom: 10px;
+position: relative;
+width: 50%;
+height: 750px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 13px;
+border-left:  1px solid /*bc*/#e6e6e6;
+}
+
+
+#clusteringbar h1 {
+color: #bfbfbf;
+font-size: 20px;
+font-weight: normal;
+}
+
+
+.button {
+background: #57A957;
+  border-radius: 9px;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+border:none;
+ outline:none;
+-moz-focus-inner {
+   border: 0;
+}
+
+}
+
+.button:hover {
+  background:  rgb(28, 200, 65);
+  text-decoration: none;
+}
+
